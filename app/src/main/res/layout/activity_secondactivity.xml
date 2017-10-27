@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_LoadSP"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:text="LOAD SHARED PREFERENCES"
+        android:onClick="loadSP"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+
+    <Button
+        android:id="@+id/btn_LIS"
+        android:layout_width="249dp"
+        android:layout_height="48dp"
+        android:text="LOAD INTERNAL STORAGE"
+        android:onClick="loadIS"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="100dp"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/btn_LoadSP"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLEAR"
+        android:onClick="clear"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="174dp"
+        android:layout_alignBaseline="@+id/btn_back"
+        android:layout_alignBottom="@+id/btn_back"
+        android:layout_alignRight="@+id/btn_LIS"
+        android:layout_alignEnd="@+id/btn_LIS" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        tools:layout_editor_absoluteX="227dp"
+        tools:layout_editor_absoluteY="174dp"
+        android:onClick="buck"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/btn_LIS"
+        android:layout_alignLeft="@+id/btn_LIS"
+        android:layout_alignStart="@+id/btn_LIS" />
+
+    <TextView
+        android:id="@+id/tv_pw"
+        android:layout_width="171dp"
+        android:layout_height="25dp"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="334dp"
+        android:layout_below="@+id/btn_clear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" />
+</RelativeLayout>

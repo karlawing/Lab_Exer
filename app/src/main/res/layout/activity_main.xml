@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.karl.labexer.MainActivity">
+
+    <EditText
+        android:id="@+id/uName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="88dp"
+        android:layout_alignBottom="@+id/tv_user"
+        android:layout_alignLeft="@+id/btn_SP"
+        android:layout_alignStart="@+id/btn_SP" />
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="78dp"
+        android:layout_height="20dp"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="104dp"
+        android:text="USER:"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btn_N"
+        android:layout_toStartOf="@+id/btn_N"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="41dp" />
+
+    <TextView
+        android:id="@+id/tv_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PASSWORD:"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="138dp"
+        android:layout_below="@+id/tv_user"
+        android:layout_alignLeft="@+id/tv_user"
+        android:layout_alignStart="@+id/tv_user"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/btn_SP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHARED PREFERENCES"
+        android:onClick="saveSP"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="173dp"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/tv_pw"
+        android:layout_alignRight="@+id/btn_IS"
+        android:layout_alignEnd="@+id/btn_IS" />
+
+    <Button
+        android:id="@+id/btn_IS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INTERNAL STORAGE"
+        android:onClick="saveIS"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="217dp"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/btn_SP"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_N"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:onClick="gotonext"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="265dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/btn_IS"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/pWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_alignBaseline="@+id/tv_pw"
+        android:layout_alignBottom="@+id/tv_pw"
+        android:layout_alignLeft="@+id/btn_N"
+        android:layout_alignStart="@+id/btn_N" />
+</RelativeLayout>
